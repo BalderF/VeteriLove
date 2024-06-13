@@ -293,46 +293,46 @@ video{
 .menu{
     padding-top: 4rem;
 }
-/*platillos*/
-.texto-platillos{
+
+.texto-productos{
     text-align: center;
     font-size: 5rem;
 }
 
-.botones-platillos{
+.botones-productos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.botones-platillos button{
+.botones-productos button{
     flex: 0 0 calc(50% - 1rem);
     padding: 1rem 3rem;
 }
 @media(min-width: 768px) {
-    .botones-platillos{
+    .botones-productos{
         display: inline-block;
     }
-    .botones-platillos button{
+    .botones-productos button{
         flex: unset;
     }
 }
 @media(min-width: 768px) {
-    .platillos{
+    .productos{
         display: flex;
         justify-content: space-between;
         flex-wrap:wrap;
     }
 }
-.platillo{
+.producto{
     flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #e1e1e1;
     padding: 2rem;
     border-radius: 5px;
 }
-.platillo h2{
+.producto h2{
     text-align: center;
 }
-.platillo p{
+.producto p{
     font-size: 1.8rem;
 }
 .precio{
@@ -352,7 +352,7 @@ video{
     height: 3.8rem;
 }
 .separador{
-    background-image: url('../assets/img/ensalada.webp');
+    background-image: url('../img/dash.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
