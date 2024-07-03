@@ -4,7 +4,7 @@ function conectar(){
     $user="root";
     $pass="";
 
-    $bd="italiano";
+    $bd="veterinaria";
 
     $con=mysqli_connect($host,$user,$pass);
 

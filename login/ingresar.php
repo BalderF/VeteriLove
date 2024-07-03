@@ -51,7 +51,7 @@ if(!empty($_POST['Inicio'])){
             timer: 3000
           })
             </script>';
-           header("location:http://localhost/veterilove/index.html");
+           header("location:http://localhost/Veterinaria/index.html");
 
         }
    
