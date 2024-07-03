@@ -14,7 +14,7 @@ $usuario=$_SESSION['nombre'];
     <?php echo "<h1> $usuario ACCEDISTE COMO  USUARIO </h1>" ?>    
     </div>
 <div style="width: 50% ; text-align: center; margin: auto;">
-    <img src="IMG-CRUD/logo-usuario.png">
+    <img src="IMG-CRUD/logo-admin2.png">
 </div>
 
 

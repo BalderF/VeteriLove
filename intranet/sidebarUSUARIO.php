@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
 
 <head>
@@ -22,7 +22,7 @@
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="IMG-CRUD/Logo-intranet.png" alt="">
+                <img src="IMG-CRUD/Logo-intranet.png" alt="">
                 </span>
 
                 <div class="text logo-text">
@@ -48,7 +48,7 @@
                     </li>
 
                     <li class="navs-link">
-                        <a href="platilloUsuario.php">
+                        <a href="productoUsuario.php">
                             <i class='bx bx-bowl-rice icon'></i>
                             <span class="text nav-text">Productos</span>
                         </a>
@@ -56,7 +56,7 @@
                     </li>
 
                     <li class="navs-link">
-                        <a href="proveedorUsuario.php">
+                        <a href="servicioUsuario.php">
                             <i class='bx bx-box icon'></i>
                             <span class="text nav-text">Servicios</span>
                         </a>
@@ -71,8 +71,18 @@
                         </a>
                         <span class="tooltip">Clientes</span>
                     </li>
+                    <!--  
+                    <li class="navs-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Ventas</span>
+                        </a>
+                        <span class="tooltip">Ventas</span>
+                    </li>-->
+
                 </ul>
             </div>
+
             <div class="bottom-content">
                 <li class="">
                     <a href="loginCerrar.php">
@@ -80,6 +90,7 @@
                         <span class="text nav-text">Cerrar Sesión</span>
                     </a>
                 </li>
+
                 <li class="mode">
                     <div class="sun-moon">
                         <i class='bx bx-moon icon moon'></i>
@@ -91,9 +102,13 @@
                         <span class="switch"></span>
                     </div>
                 </li>
+
             </div>
         </div>
+
     </nav>
+
+
 
     <script>
         const body = document.querySelector('body'),

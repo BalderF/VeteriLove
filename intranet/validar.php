@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conexion=mysqli_connect("localhost","root","","italiano");
+$conexion=mysqli_connect("localhost","root","","veterinaria");
 
 if(isset($_SESSION['rol'])){
     switch($_SESSION['rol']){

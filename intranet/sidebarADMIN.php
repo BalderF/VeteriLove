@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -14,7 +13,6 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/tabla.css">
-    
     <!--<title>Dashboard Sidebar Menu</title>-->
 </head>
 
@@ -23,7 +21,7 @@
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="IMG-CRUD/Logo-intranet.png" alt="">
+                <img src="IMG-CRUD/Logo-intranet.png" alt="">
                 </span>
 
                 <div class="text logo-text">
@@ -49,7 +47,7 @@
                     </li>
 
                     <li class="navs-link">
-                        <a href="platilloADMIN.php">
+                        <a href="productoADMIN.php">
                             <i class='bx bx-bowl-rice icon'></i>
                             <span class="text nav-text">Productos</span>
                         </a>
@@ -57,7 +55,7 @@
                     </li>
 
                     <li class="navs-link">
-                        <a href="proveedorADMIN.php">
+                        <a href="servicioADMIN.php">
                             <i class='bx bx-box icon'></i>
                             <span class="text nav-text">Servicios</span>
                         </a>
@@ -79,6 +77,14 @@
                         </a>
                         <span class="tooltip">Clientes</span>
                     </li>
+                    <!--  
+                    <li class="navs-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Ventas</span>
+                        </a>
+                        <span class="tooltip">Ventas</span>
+                    </li>-->
 
                 </ul>
             </div>

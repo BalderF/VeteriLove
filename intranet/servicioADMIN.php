@@ -1,9 +1,9 @@
 <?php include 'sidebarADMIN.php' ?>
 <?php
-include("conexion.php");
+require("conexion.php");
 $con = conectar();
 
-$sql = "SELECT *  FROM usuarios";
+$sql = "SELECT *  FROM servicio";
 $query = mysqli_query($con, $sql);
 
 $row = mysqli_fetch_array($query);
@@ -13,24 +13,19 @@ $row = mysqli_fetch_array($query);
     <div class="alto">
         <h3> BIENVENIDO AL PANEL ADMINISTRATIVO</h2>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" >
         <div class="row">
 
             <div class="col-md-4" style="margin: auto;">
-                <h3 class="texth3">Nuevo Usuario</h3>
+                <h3 class="texth3">Nuevo Servicio</h3>
 
-                <form action="usuariosInsertar.php" method="POST">
+                <form action="servicioInsertar.php" method="POST">
 
                     <p class="text"> Codigo</p> <input type="text" class="form-control mb-3" name="codigo" placeholder="Codigo">
                     <p class="text"> Nombre</p> <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
-                    <p class="text"> Correo</p><input type="email" class="form-control mb-3" name="correo" placeholder="Correo">
-                    <p class="text"> Password</p> <input type="password" class="form-control mb-3" name="pass" placeholder="Password">
-                    <p class="text"> Rol</p> 
-                    <select name="rol" class="form-control mb-3">
-                        <option value="Administrador"> Administrador</option>
-                        <option value="Usuario" >Usuario</option>
-                        
-                    </select>
+                    <p class="text"> Costo</p><input type="text" class="form-control mb-3" name="costo" placeholder="Costo">
+                    <p class="text"> Servicio</p> <input type="text" class="form-control mb-3" name="servicio" placeholder="Servicio">
+                    
                     <input type="submit" class="btn btn-primary">
                 </form>
             </div>
@@ -39,10 +34,12 @@ $row = mysqli_fetch_array($query);
                 <table class="table">
                     <thead class="table-info table-striped">
                         <tr>
+                        <th>Id</th>
                             <th>Codigo</th>
                             <th>Nombre</th>
-                            <th>Correo</th>
-                            <th>Rol</th>
+                            <th>Costo</th>
+                            <th>Servicio</th>
+                            
                             <th></th>
                             <th></th>
                         </tr>
@@ -53,13 +50,13 @@ $row = mysqli_fetch_array($query);
                         while ($row = mysqli_fetch_array($query)) {
                         ?>
                             <tr class="text4">
+                            <th data-label="Id"><?php echo $row['id'] ?></th>
                                 <th data-label="Codigo"><?php echo $row['codigo'] ?></th>
                                 <th data-label="Nombre"><?php echo $row['nombre'] ?></th>
-                                <th data-label="Correo"><?php echo $row['correo'] ?></th>
-                               
-                                <th data-label="Rol"><?php echo $row['rol'] ?></th>
-                                <th><a href="usuariosActualizar.php?id=<?php echo $row['codigo'] ?>" class="btn btn-info">Editar</a></th>
-                                <th><a href="usuariosEliminar.php?id=<?php echo $row['codigo'] ?>" class="btn btn-danger">Eliminar</a></th>
+                                <th data-label="Costo"><?php echo $row['costo'] ?></th>
+                                <th data-label="Servicio"><?php echo $row['servicio'] ?></th>      
+                                <th><a href="servicioActualizar.php?id=<?php echo $row['codigo'] ?>" class="btn btn-info">Editar</a></th>
+                                <th><a href="servicioEliminar.php?id=<?php echo $row['codigo'] ?>" class="btn btn-danger">Eliminar</a></th>
                             </tr>
                         <?php
                         }

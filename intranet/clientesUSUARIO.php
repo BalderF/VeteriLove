@@ -15,6 +15,9 @@ $row = mysqli_fetch_array($query);
     </div>
     <div class="container mt-5" >
     <h3 class="texth3">Clientes</h3>
+    <div class= "text-right">
+                <a href="\Veterinaria\Reporte\PruebaH.php" target="_blank" class="btn btn-success"><i class="fas fa-file-pdf"></i>Generar Reportes</a>
+            </div>
         <div class="row">
             <div class="contanie" style="margin-top: 20px;">
                 <table class="table">

@@ -13,7 +13,7 @@ $usuario=$_SESSION['nombre'];
     <?php echo "<h1>  $usuario  ACCEDISTE COMO  ADMINISTRADOR</h1>" ?>    
     </div>
 <div style="width: 50% ; text-align: center; margin: auto;">
-    <img src="IMG-CRUD/logo-admin2.png">
+    <img src="IMG-CRUD/logo-admin.png">
 </div>
 
 
