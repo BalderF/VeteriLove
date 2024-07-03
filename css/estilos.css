@@ -1,7 +1,7 @@
 :root{
-    --azul:#87CEEB;
+    --verde:#87CEEB;
     --blanco:#fff;
-    --rojo:#e15353;
+    --rojo:#881014;
     --oscuro:#000;
     --titulos:'Arima Madurai',cursive;
     --parrafos:'Mulish', sans-serif;
@@ -35,8 +35,8 @@ h3, p, a{
 img{
     max-width: 100%;
 }
-.azul{
-    color: var(--azul);
+.verde{
+    color: var(--verde);
 }
 .rojo{
     color: var(--rojo);
@@ -114,7 +114,7 @@ img{
     margin-bottom: 2rem;
 }
 .btn-verde{
-    background-color: var(--azul);
+    background-color: var(--verde);
     border: none;
     display: inline-block;
     margin-bottom: 2rem;
@@ -141,7 +141,7 @@ img{
   color: var(--blanco);  
 }
 .logo h2{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .navegacion a{
     text-decoration: none;
@@ -164,7 +164,7 @@ img{
     color: var(--rojo);
 }
 .navegacion a:nth-child(odd):hover{
-    color: var(--azul);
+    color: var(--verde);
 }
 .navegacion a:first-of-type{
     margin-top: 5rem;
@@ -251,7 +251,7 @@ video{
 }
 .texto-nosotros .bienvenida{
     font-size: 4rem;
-    color: var(--azul);
+    color: var(--verde);
     text-align: center;
 }
 @media(min-width: 768px) {
@@ -293,46 +293,46 @@ video{
 .menu{
     padding-top: 4rem;
 }
-
-.texto-productos{
+/*platillos*/
+.texto-platillos{
     text-align: center;
     font-size: 5rem;
 }
 
-.botones-productos{
+.botones-platillos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.botones-productos button{
+.botones-platillos button{
     flex: 0 0 calc(50% - 1rem);
     padding: 1rem 3rem;
 }
 @media(min-width: 768px) {
-    .botones-productos{
+    .botones-platillos{
         display: inline-block;
     }
-    .botones-productos button{
+    .botones-platillos button{
         flex: unset;
     }
 }
 @media(min-width: 768px) {
-    .productos{
+    .platillos{
         display: flex;
         justify-content: space-between;
         flex-wrap:wrap;
     }
 }
-.producto{
+.platillo{
     flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #e1e1e1;
     padding: 2rem;
     border-radius: 5px;
 }
-.producto h2{
+.platillo h2{
     text-align: center;
 }
-.producto p{
+.platillo p{
     font-size: 1.8rem;
 }
 .precio{
@@ -412,7 +412,7 @@ video{
     }
 }
 .texto-chef, .imagen-chef{
-    flex: 0 0 calc(50% - 1rem) ;
+    flex: 0 0 calc(50% - 1rem);
 }
 .texto-chef h3{
     font-size: 3rem;
@@ -550,7 +550,7 @@ video{
 }
 .success{
     text-align: center;
-    color : rgb(42, 183, 226);
+    color : green;
 }
 .item {
     border: 2px solid #000;
