@@ -396,7 +396,7 @@ video{
         text-align: left;
     }
 }
-
+    
 /*seccion del chef*/
 .chef h2{
     background-color: var(--rojo);
@@ -605,4 +605,5 @@ video{
   .shopping-cart-total {
     min-height: 96px;
   }
+  
   
